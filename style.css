@@ -1,0 +1,95 @@
+.container {
+    display: grid;
+	place-items: center;
+	
+}
+
+#header{
+	box-shadow: 7px 10px 15px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border: solid 2px black;	
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 396px;
+	height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	background-color: rgba(57,57,59,255);
+}
+#output{
+	border-radius: 10px;
+	width: 395px;
+	height: 38px;
+	padding-top: 7px;
+	padding-right: 10px;
+	background-color: rgba(162,175,119,255);
+}
+#text{
+	font-family: 'Orbitron', sans-serif;
+	text-align: end;
+	font-size: 25px;
+}
+
+
+table, td {	
+	background-color: rgba(57,57,59,255);
+	height: 60px;
+	width: 440px;
+	text-align: center;
+	
+}
+table {
+	padding-bottom: 15px;
+	box-shadow: 7px 10px 15px 0 rgba(0, 0, 0, 0.2),
+	 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 2px solid black;
+	
+}
+/* button {
+	width: 70px;
+	height: 50px;
+	border-radius: 30px;
+} */
+button {
+	width: 70px;
+	height: 50px;
+	display: inline-block;
+	font-family: 'Orbitron', sans-serif;
+	font-size: 22px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: rgb(5, 5, 5);
+	background-color: rgba(88,89,91,255);
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 5px #999;
+	
+  }
+#eqlbtn:hover {
+
+	background-color: #303030;}
+ #eqlbtn {
+
+	 height: 117px;
+	 background-color: rgba(54,174,29,255)
+ } 
+ #del{
+	background-color: rgba(241,90,43,255);
+ }
+ /* button:hover {
+
+	background-color: #303030;
+	
+ } */
+
+  button:active {
+	background-color: #303030;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }

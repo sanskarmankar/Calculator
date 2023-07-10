@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body ng-app="CalculatorApp" ng-init="a=0;b=0;curr=0;" ng-controller="CalculatorController">
+    <h1>Calculator</h1>
+   <div class="container">
+    
+    <div id="header">
+      <div id="output">
+        <div id="text">
+          {{res}} {{ num_a }} {{sign}} {{ curr }} 
+        </div>
+      </div>
+      
+    </div>
+
+     <table>
+      <tr>
+       
+      
+       
+        <td>
+          <button ng-click="mod()">%</button>
+        </td>
+        
+         
+         <td>
+          <button ng-click="mul()">x</button>
+         </td>
+         <td>
+          <button id="del" ng-click="cancel()">C</button>
+        </td>
+        <td>
+          <button id="del" ng-click="del()">DEL</button>
+        </td>
+      </tr>
+      <tr class="row">
+       <td>
+        <button ng-click="digit(7)">7</button>
+       </td>
+       <td>
+        <button ng-click="digit(8)">8</button>
+       </td>
+       <td>
+        <button ng-click="digit(9)">9</button>
+       </td>
+       <td>
+        <button ng-click="sub()">-</button>
+       </td>
+       
+      
+      </tr>
+      <tr class="row">
+        <td>
+          <button ng-click="digit(4)">4</button>
+        </td>
+        <td>
+         <button ng-click="digit(5)">5</button>
+        </td>
+        <td>
+         <button ng-click="digit(6)">6</button>
+        </td>
+
+        <td>
+          <button ng-click="add()">+</button>
+         </td>
+       
+        
+       </tr>
+       <tr class="row">
+        <td>
+          <button ng-click="digit(1)">1</button>
+        </td>
+        <td>
+         <button ng-click="digit(2)">2</button>
+        </td>
+        <td>
+         <button ng-click="digit(3)">3</button>
+        </td>
+        <td rowspan="2">
+          <button id="eqlbtn" ng-click="equal()">=</button>
+         </td>
+       </tr>
+       <tr class="row" >
+        <td>
+          <button ng-click="div()" >/</button>
+         </td>
+        
+        <td>
+          <button ng-click="digit(0)">0</button>
+        </td>
+        <td>
+          <button>.</button>
+         </td>
+       </tr>
+       
+       <!-- <tr id="result">
+        <td rowspan="2">{{ num_a }} {{sign}} {{ curr }} {{res}}</td>
+      </tr> -->
+      
+     </table>
+   </div>
+  </body>
+
+</html>
